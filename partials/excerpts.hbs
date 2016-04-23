@@ -1,0 +1,14 @@
+<ul id="post-list">
+    {{#foreach posts}}
+        <li>
+            <h1><a href='{{url}}'>{{title}}</a></h2>
+            <p>{{excerpt characters="50"}}&hellip;</p>
+            {{#if image}}
+            <div class="cover" scrollImg="{{image}}"></div>
+            {{/if}}
+            <time datetime="{{date format='YYYY-MM-DD'}}">{{date format='MMM D, YYYY'}}</time>
+        </li>
+    {{/foreach}}
+</ul>
+
+{{pagination}}

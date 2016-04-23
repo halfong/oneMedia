@@ -1,0 +1,15 @@
+{
+  "name": "oneMedia",
+  "version": "1.0.0",
+  "description": "一个极简的ghost主题，适合个人及团队以博文为主要内容的博客。",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sunkeyfong/oneMedia.git"
+  },
+  "author": "Sunkey Fong <hi@sunkey.com>",
+  "bugs": {
+    "url": "https://github.com/sunkeyfong/oneMedia/issues"
+  },
+  "homepage": "https://github.com/sunkeyfong/oneMedia",
+  "private": true
+}

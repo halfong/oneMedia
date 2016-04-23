@@ -1,0 +1,398 @@
+.Wrapper {
+  width: 100%;
+  max-width: 690px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icons.eot?buy619');
+  src: url('../fonts/icons.eot?#iefixbuy619') format('embedded-opentype'), url('../fonts/icons.woff?buy619') format('woff'), url('../fonts/icons.ttf?buy619') format('truetype'), url('../fonts/icons.svg?buy619#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-qzone:before {
+  content: "\e609";
+}
+.icon-weibo:before {
+  content: "\e604";
+}
+.icon-weixin:before {
+  content: "\e605";
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  font-size: inherit;
+}
+body {
+  box-sizing: border-box;
+  padding: 0 1.6em 120px 1.6em;
+  color: #666;
+  font: 16px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: .02em;
+}
+a[href] {
+  color: #5694f1;
+}
+a[href]:active {
+  color: #666;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  letter-spacing: 0;
+}
+h1 {
+  color: #3a3a3a;
+}
+section#author > header {
+  padding: 1em 0 4em 0;
+  overflow: auto;
+  position: relative;
+  margin-bottom: 3em;
+}
+section#author > header > img {
+  float: left;
+  display: block;
+  width: 60px;
+  border-radius: 30px;
+  margin-right: 1em;
+}
+section#author > header > #details {
+  width: 72%;
+  float: left;
+}
+section#author > header > #details h1 {
+  font-size: 1.7em;
+}
+section#author > header > #details h2 {
+  font-size: 1.3em;
+  color: #999;
+  font-style: italic;
+  font-family: serif;
+}
+section#share > span {
+  color: #999;
+}
+section#share a {
+  font-size: 22px;
+  width: 22px;
+  margin-left: 2px;
+  color: #999;
+  display: inline-block;
+  vertical-align: sub;
+}
+section#share a:hover {
+  color: #666;
+}
+article.post > header h1 {
+  font-size: 1.7em;
+}
+article.post > section > h1,
+article.post > section > h2,
+article.post > section > h3,
+article.post > section > h4,
+article.post > section > h5,
+article.post > section > h6,
+article.post > section > hr {
+  margin: 1.6em 0;
+}
+article.post > section > p,
+article.post > section > ol,
+article.post > section > ul,
+article.post > section > pre,
+article.post > section li {
+  margin-top: 1.6em;
+}
+article.post > section > blockquote {
+  margin: 2em 0;
+}
+article.post > section a {
+  color: #5694f1;
+  margin: 0 .1em;
+}
+article.post > section em {
+  font-size: .9em;
+  color: #999;
+}
+article.post > section > hr {
+  border: 0;
+  border-bottom: 1px #eee solid;
+}
+article.post > section > h1 {
+  font-size: 1.1em;
+  border-left: 4px #5694f1 solid;
+  margin-left: -20px;
+  padding-left: 16px;
+}
+article.post > section > h2 {
+  color: #3a3a3a;
+}
+article.post > section > h3 {
+  font-size: .95em;
+  color: #3a3a3a;
+}
+article.post > section > blockquote {
+  font-style: italic;
+  color: #999;
+  padding: 0 2em;
+}
+article.post > section > blockquote p {
+  border-left: 4px #eee solid;
+  padding-left: 1em;
+}
+article.post > section > p img {
+  width: 100%;
+  padding: .6em 0;
+}
+article.post > section > p code {
+  font-size: .9em;
+  border-radius: .2em;
+  color: #3a3a3a;
+  padding: .1em .3em;
+  border: 1px #eee solid;
+  margin: 0 .2em;
+}
+article.post > section > pre {
+  white-space: normal;
+  padding: 1em;
+  border: 1px #eee solid;
+  border-radius: .2em;
+  font-size: .9em;
+}
+article.post > section > pre[class] {
+  border: none;
+}
+article.post > section > ol > li,
+article.post > section > ul > li {
+  list-style: initial;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+article.post > section > ol > li ol,
+article.post > section > ul > li ol,
+article.post > section > ol > li ul,
+article.post > section > ul > li ul {
+  list-style-type: circle;
+}
+article.post > footer {
+  border-top: 1px #eee solid;
+  font-size: .8em;
+  margin-top: 80px;
+  padding: 20px 0;
+  position: relative;
+}
+article.post > footer > div {
+  margin: 0 25px 0 0;
+  float: left;
+}
+article.post > footer > div span {
+  color: #999;
+  display: block;
+}
+article.post > footer > div a {
+  font-weight: bolder;
+  color: #5694f1;
+}
+article.post > footer > #share {
+  float: right;
+}
+body > header {
+  width: 100%;
+  max-width: 690px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-top: 10vh;
+  border-bottom: 1px #eee solid;
+}
+body > header h1 {
+  color: #5694f1;
+  font-size: 1.1em;
+  letter-spacing: -0.02em;
+  text-align: left;
+  padding: .7em 0;
+}
+body > header h1 img {
+  display: none;
+  vertical-align: middle;
+  height: 32px;
+}
+body > section {
+  width: 100%;
+  max-width: 690px;
+  margin: 0 auto;
+  margin-top: 4em;
+}
+body > footer {
+  width: 100%;
+  max-width: 690px;
+  margin: 0 auto;
+  margin-top: 5em;
+  padding: 1em 0;
+  border-top: 1px #eee solid;
+  overflow: auto;
+  font-size: .85em;
+  color: #aaa;
+}
+body > footer > ul.nav {
+  float: left;
+}
+body > footer > ul.nav li {
+  float: left;
+}
+body > footer > ul.nav li.nav-current {
+  color: #555;
+}
+body > footer > p {
+  float: right;
+}
+ul#post-list li {
+  padding: 1em 0;
+  border-bottom: 1px #eee solid;
+  position: relative;
+}
+ul#post-list li:first-child {
+  padding-top: 0;
+}
+ul#post-list li:first-child time {
+  top: .4em;
+}
+ul#post-list li:last-child {
+  border: none;
+}
+ul#post-list li > h1 {
+  font-size: 1.2em;
+  padding: .4em 0;
+  width: 60%;
+}
+ul#post-list li > h1 > a {
+  color: #3a3a3a;
+}
+ul#post-list li > p {
+  width: 60%;
+  color: #aaa;
+}
+ul#post-list li > .cover {
+  margin: 1em auto;
+}
+ul#post-list li > time {
+  display: block;
+  font-size: 1.2em;
+  position: absolute;
+  right: 0;
+  top: 2em;
+  color: #ccc;
+}
+#pagination {
+  margin-top: 2em;
+  font-size: .85em;
+  text-align: center;
+  position: relative;
+}
+#pagination a {
+  color: #5694f1;
+}
+#pagination a.prev {
+  position: absolute;
+  left: 0;
+}
+#pagination a.next {
+  position: absolute;
+  right: 0;
+}
+#comments {
+  margin-top: 40px;
+  padding-top: 40px;
+}
+#comments .ds-meta,
+#comments .ds-comments-info,
+#comments .ds-toolbar,
+#comments .ds-powered-by,
+#comments .ds-sync,
+#comments .ds-post-placeholder {
+  display: none!important;
+}
+#comments .ds-comments {
+  border-bottom: 0!important;
+}
+#comments .ds-post {
+  border: 0!important;
+}
+#comments .ds-children .ds-post {
+  border-top: 1px #eee solid;
+}
+#comments .ds-post-self {
+  border: 0!important;
+  padding: 20px;
+}
+#comments #ds-thread #ds-reset .ds-replybox {
+  margin-top: 20px;
+}
+#comments .ds-avatar {
+  box-shadow: none!important;
+}
+#comments .ds-avatar img {
+  box-shadow: none!important;
+}
+#comments .ds-login-buttons {
+  display: none!important;
+}
+@media screen and (max-width: 750px) {
+  body {
+    padding-bottom: 1.5em;
+  }
+  body > header {
+    padding-top: .3em;
+  }
+  body > section {
+    margin-top: 2em;
+  }
+  body > section #post-list li > h1,
+  body > section #post-list li > p {
+    width: 100%!important;
+  }
+  body > section #post-list li > time {
+    display: none;
+  }
+  body > section article.post footer div {
+    float: none;
+  }
+  body > section article.post footer #share {
+    position: absolute;
+    right: 0;
+    top: 20px;
+  }
+  body > section #author header > img {
+    float: none;
+    margin: 0 auto;
+  }
+  body > section #author header #details {
+    float: none;
+    width: 100%;
+  }
+  body > section #author header #details h1 {
+    text-align: center;
+  }
+}

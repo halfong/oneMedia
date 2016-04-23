@@ -1,0 +1,36 @@
+{{!< default}}
+
+{{#post}}
+
+    {{#contentFor "meta"}}
+        <meta name="author" content="{{author.name}}" />
+        <meta name="keywords" content="sunkey,sunkeyfong,三七,方浩,blog,{{tags prefix="on " separator=", " autolink="false"}}" />
+        <meta name="description" content="{{excerpt characters='157'}}..." />
+    {{/contentFor}}
+
+    <article class="post">
+
+    	<header>
+    		<h1>{{title}}</h1>
+    	</header>
+
+    	<section>
+            {{content}}
+        </section>
+
+        <footer>
+            <div>
+                <span>写于</span>
+                <time datetime="{{date format='YYYY-MM-DD'}}">{{date format='YYYY年M月D日 H时'}}</time>
+            </div>
+            <div>
+                <span>关于</span>{{tags}}
+            </div>
+            {{> share}}
+        </footer>
+        
+    </article>
+
+    {{> comments}}
+    
+{{/post}}

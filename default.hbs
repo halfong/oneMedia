@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>{{meta_title}}</title>
+        {{{block "meta"}}}
+        {{ghost_head}}
+        <meta charset="utf-8" />
+        <meta name="designer" content="SunkeyFong" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="msapplication-TileImage" content="{{asset 'images/windows-tile.png'}}" />
+        <meta name="msapplication-TileColor" content="#262A2D" />
+        <!--Robots and Viewport-->
+        <meta name="robots" content="index,follow" />
+        <meta name="google-site-verification" content="2kM7s_I7Tlqf03ioPU7JErw-48YBNAdEwlQOCQTr9mc" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <!--icons，styles & scripts-->
+        <link rel="icon" href="{{asset 'favicon.ico'}}" />
+        <link rel="icon" sizes="196x196" href="{{asset 'images/android-homescreen.png'}}" />
+        <link rel="apple-touch-icon" href="{{asset 'images/apple-touch-icon.png'}}" />
+        <link rel="stylesheet" href="{{asset 'css/onemedia.css'}}" />
+        <link rel="stylesheet" href="{{asset 'css/prism.css'}}">
+        <script src="{{asset 'js/html5shiv-printshiv.js'}}"></script>
+        <script src="{{asset 'js/respond.js'}}"></script>
+    </head>
+    <body class="{{body_class}}">
+
+            <header>
+                <h1 id="title">
+                    <a class="index" href="{{@blog.url}}">
+                        {{#if @blog.logo}}
+                            <img src="{{@blog.logo}}" />
+                        {{/if}}
+                        {{@blog.title}}
+                    </a>
+                </h1>
+            </header>
+
+            <section>
+                {{{body}}}
+            </section>
+
+            <footer>
+                {{navigation}}
+                <p class="small">
+                    Sunkey edition© 2016 powered by <a href="http://ghost.org">Ghost</a>
+                </p>
+            </footer>
+
+        {{ghost_foot}}
+        <script type="text/javascript" src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+        <script src="{{asset 'js/prism.js'}}"></script>
+        <script src="{{asset 'js/fastclick.js'}}"></script>
+        <script src="{{asset 'js/onemedia.js'}}"></script>
+
+    </body>
+</html>

@@ -1,0 +1,10 @@
+{{! 重写Ghost默认页码模板}}
+<nav id="pagination" role="navigation">
+    {{#if prev}}
+        <a class="prev" href="{{page_url prev}}">&larr; 更新</a>
+    {{/if}}
+    <span>共{{page}}页，第{{pages}}页</span>
+    {{#if next}}
+        <a class="next" href="{{page_url next}}">更早 &rarr;</a>
+    {{/if}}
+</nav>
