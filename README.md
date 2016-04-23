@@ -1,2 +1,5 @@
 # oneMedia
-A theme for Ghost blog system
+
+> 还原纸质阅读的纯粹，以“内容”为中心，去除“界面化”的样式。与此同时，将技术特性以“轻巧、自然”的方式融入到交互中。
+
+在线示范，请见[我的博客 Sunkey Fong](http://sunkey.me)。
