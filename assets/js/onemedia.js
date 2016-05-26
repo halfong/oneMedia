@@ -75,6 +75,37 @@ $(document).ready(function() {
 })();
 
 
+//点击文章图片能放大查看
+(function(){
+  if(!window.Zepto && !window.Jquery){ console.error('Zeptojs or Jquery Required!');return false;}
+  $('body').css({'position':'relative','height':'100%'});
+  $('body').append('<div id="imgBox"></div>');
+  $('#imgBox').css({
+    'display':'none',
+    'position':'absolute',
+    'left':'0',
+    'top':'0',
+    'width':'100%',
+    'min-height':'100%',
+    'overflow':'auto',
+    'background':'rgba(0,0,0,.8)',
+    'z-index':'100',
+    'box-sizing':'border-box',
+    'padding':'1em',
+  }).click(function(){
+    $(this).hide();
+  });
+
+  $('.post img').each(function(){
+    $(this).css('cursor','pointer');
+    var bigImg =  $(this).clone().css({'width':'100%'});
+    $('#imgBox').append(bigImg);
+  }).click(function(){
+    $('#imgBox').show();
+  });
+
+})();
+
 
 
 
